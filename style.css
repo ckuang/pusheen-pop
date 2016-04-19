@@ -6,10 +6,9 @@ canvas {
 
 .title {
   display: block;
+  float: left;
   color: white;
   background: #423C40;
-  width: 500px;
-  margin: auto;
   font-size: 36px;
   border: 1px solid black;
   text-align: center;
