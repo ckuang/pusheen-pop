@@ -9,21 +9,45 @@
 
   <body>
     <img src="images/pusheen.png" id="bg" alt="">
-    <h1 class="title">PUSHEEN POP</h1>
+
+    <div class="game-container">
+    <div class="game-information">
+      <h1 class="title">PUSHEEN POP</h1>
+      <p>
+        Instructions:
+        <br>        <br>
+        Use the left and right arrows on your keyboard to aim.
+        <br>        <br>
+        Press the spacebar to launch the bubble.
+        <br>        <br>
+        Group three bubbles of the same color to pop them.
+        <br>        <br>
+        Clear all the bubbles to win!
+        <br>        <br>
+        Don't let bubbles get to the bottom or you lose!
+      </p>
+    </div>
     <canvas id="canvas"></canvas>
 
-    <div style="display:none;">
-      <img id="blue" src="images/blueyarn.png" width="60" height="60"/>
-    </div>
-    <div style="display:none;">
-      <img id="green" src="images/greenyarn.png" width="60" height="60"/>
-    </div>
-    <div style="display:none;">
-      <img id="orange" src="images/orangeyarn.png" width="60" height="60"/>
-    </div>
-    <div style="display:none;">
-      <img id="purple" src="images/purpleyarn.png" width="60" height="60"/>
-    </div>
+
+    <!-- modal content -->
+    <section id="modal" class="modal">
+      <article class="modal-content">
+        <h1 id="win">You Won!!!</h1>
+        <img id="happy" src="images/happy_pusheen.png"/>
+        <div id="win-play-again">Play Again</div>
+      </article>
+      <div class="modal-screen"></div>
+    </section>
+
+    <section id="lose-modal" class="lose-modal">
+      <article class="modal-content">
+        <h1 id="lose">You Lost!!!</h1>
+        <img id="sad" src="images/sad_pusheen.png"/>
+        <div id="lose-play-again">Play Again</div>
+      </article>
+      <div class="modal-screen"></div>
+    </section>
 
     <script src="lib/bubble.js"></script>
     <script src="lib/arrow.js"></script>
@@ -31,12 +55,14 @@
 
     <script>
       var canvasEl = document.getElementById("canvas");
-      canvasEl.height = 740;
-      canvasEl.width = 500;
+      canvasEl.height = 600;
+      canvasEl.width = 420;
       new PuzzleBobble.Game(
         canvasEl.width,
         canvasEl.height
       ).start(canvasEl);
     </script>
+
+  </div>
   </body>
 </html>

@@ -6,6 +6,7 @@ canvas {
 
 .title {
   display: block;
+  width: 420px;
   float: left;
   color: white;
   background: #423C40;
@@ -16,6 +17,35 @@ canvas {
   font-family: 'Fredoka One';
 }
 
+
+
+.game-container {
+  padding-top: 20px;
+  display: block;
+  width: 1000px;
+  margin: auto;
+}
+
+.game-information {
+  display: block;
+  width: 500px;
+  content: "";
+}
+
+p {
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  color: white;
+  background: #423C40;
+  width: 420px;
+  font-size: 24px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: 'Fredoka One';
+  padding: 10px;
+}
+
 #bg {
   position: fixed;
   top: 0;
@@ -23,4 +53,83 @@ canvas {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+
+.modal {
+  display: none;
+}
+.modal.active {
+  display: block;
+}
+
+.lose-modal {
+  display: none;
+}
+.lose-modal.active {
+  display: block;
+}
+
+.modal-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.7);
+}
+.modal-content {
+  font-family: 'Fredoka One';
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  margin-top: -200px;
+  margin-left: -175px;
+  height: 400px;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 5px;
+  font-size: 36px;
+}
+
+#win, #lose {
+  display: block;
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+
+#happy {
+  display: block;
+  width: 300px;
+  margin: auto;
+}
+
+#sad {
+  display: block;
+  height: 300px;
+  margin: auto;
+}
+
+#win-play-again {
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+#win-play-again:hover {
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+#lose-play-again {
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+#lose-play-again:hover {
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
 }
