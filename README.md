@@ -2,7 +2,7 @@
 
 A cat-themed bubble shooter game!
 
-[Play the game here!](http://charleskuang.com/pusheen-pop/)
+[Play the game here!](https://ckuang.github.io/pusheen-pop/)
 
 ## Preview
 ![Game Preview][welcome]
@@ -18,7 +18,7 @@ A cat-themed bubble shooter game!
 - JavaScript
 - HTML5 Canvas
 
-## Technical Implementation Details
+## Technical Design Notes
 
 ### Bubble Storage & Removal
 The game uses an efficient hash table data structure to store and manage bubbles, with unique IDs as keys. This enables two key removal scenarios:
